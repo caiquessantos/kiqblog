@@ -70,7 +70,6 @@ function App() {
                   path="/register"
                   element={!user ? <RegisterForm /> : <Navigate to="/" />}
                 ></Route>
-                <Route path="/about" element={<About />}></Route>
               </Routes>
             </div>
             <Footer />
