@@ -1,0 +1,41 @@
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  padding: 0.8em;
+  background-color: #f4ecd8;
+  border-left: 0.25em solid #c65a46;
+  border-radius: 0 0.5em 0.5em 0;
+  text-align: left;
+}
+
+.previewImage {
+  width: 4.2em;
+  height: 4.2em;
+  object-fit: cover;
+  border-radius: 0.4em;
+  flex-shrink: 0;
+}
+
+.previewInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  min-width: 0;
+}
+
+.previewTitle {
+  margin: 0;
+  font-size: 1.05em;
+  font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.previewDate {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #555;
+}

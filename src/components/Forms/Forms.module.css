@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  flex: 1;
+  padding: 0 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: min(90vw, 32em);
+  max-width: none;
+  flex-shrink: 0;
+  padding: 2em;
+  background-color: #f5f5f5;
+  border-radius: 0.8em;
+  box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.12);
+}
+
+.form h2 {
+  text-align: center;
+  margin: 0 0 1.5em;
+  font-size: 1.8em;
+  color: #1a1a1a;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.title {
+  margin-bottom: 0.5em;
+}
+
+.label input {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.label input:focus {
+  border-color: #c65a46;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.8em;
+  background-color: #c65a46;
+  color: #fff;
+  border: none;
+  border-radius: 0.4em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #a94435;
+  transform: translateY(-0.1em);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:focus-visible {
+  outline: 0.2em solid #c65a46;
+  outline-offset: 0.2em;
+}
+
+.btn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btnCancel {
+  width: 100%;
+  padding: 0.8em;
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btnCancel:hover {
+  background-color: #e2e2e2;
+  color: #1a1a1a;
+}
+
+.btnCancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #a32222;
+  background-color: #fbeaea;
+  border: 1px solid #e5b5b5;
+  border-radius: 0.4em;
+  padding: 0.8em 1em;
+  margin: 0 0 1em;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: center;
+}
