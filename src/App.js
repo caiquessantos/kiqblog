@@ -9,7 +9,6 @@ import { useAuthentication } from "./hooks/auth/useAuthentication";
 
 // pages
 import Home from "./pages/home/Home";
-import About from "./pages/about/About";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import LoginForm from "./components/Forms/Login/LoginForm";
